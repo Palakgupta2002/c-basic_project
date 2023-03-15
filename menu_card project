@@ -1,0 +1,651 @@
+o.h>
+#include<conio.h>
+int main(){
+	char name[12];
+	int mobile;
+	char gender;
+	int menu;
+	int menu1;
+	int menu2;
+	int menu3;
+	int payment;
+    char upi[12];
+    int otp;
+    int atm;
+
+
+	for(int i=0;i<3;i++){
+	
+	printf("                                     ************************************************\n");
+}
+	printf("                                      *      **WELCOME in MCA RESTAURANTS**      *\n");
+	for(int i=0;i<3;i++){
+	
+	printf("                                      *************************************************\n");
+}
+	printf("if you visit first time my restrurant plese fill this form\n");
+	printf("Enter your name here:");
+	scanf("%s",&name);
+	printf("Enter your mobile number:");
+	scanf("%d",&mobile);
+	printf("Enter your gender:(enter only in the format of M or F )");
+	scanf("%s",&gender);
+ switch(gender){
+ case 'F':
+	for(int i=0;i<3;i++){
+	
+	printf("                                     ************************************************\n");
+}
+	printf("                                      *                **WELCOME Miss %s         *\n",name);
+	for(int i=0;i<3;i++){
+	
+	printf("                                      *************************************************\n");
+}
+break;
+case 'M':
+		for(int i=0;i<3;i++){
+	
+	printf("                                     ************************************************\n");
+}
+	printf("                                      *      **WELCOME Mister %s     *\n",name);
+	for(int i=0;i<3;i++){
+	
+	printf("                                      *************************************************\n");
+}
+break;
+
+
+
+}
+printf("What would you like to order %s",name);
+printf("\n MCA RESTRUARANT MENU\n\n");
+printf("so firstly enter your choice which type of food you like\n\n");
+printf("1. Indian food\n\n");
+printf("2. south indian food\n\n");
+printf("3. chinese food\n\n");
+printf("enter any one key which you want to order\n\n");
+scanf("%d",&menu);
+switch(menu){
+	case 1:
+		printf("1. Kadi chawal\n\n");
+		printf("2. Chapati with tadaka dal\n\n");
+		printf("3. Shahi paneer with lazeez pulaw\n\n");
+		printf("4. Kadhai paneer with tandoori roti\n\n");
+		printf("5. Palak paneer with paratha\n\n");
+		printf("6. Aloo paratha\n\n");
+		printf("Select your order by given number\n\n");
+		scanf("%d",&menu1);
+		switch (menu1){
+			case 1:
+				printf("uff really your choice is so nice \n\n");
+				printf("price of this amazing dish is :Rs 200/-\n\n");
+				printf("how would you like to pay\n\n");
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment){
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						label1:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto label1;
+							
+						}
+						break;
+						case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						kabel1:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto kabel1;
+							
+						}
+						break;
+							
+							
+						
+				}
+			   
+				
+				
+				break;
+				
+		
+		case 2:
+				printf("uff really your choice is so nice \n\n");
+				printf("price of this amazing dish is :Rs 400/-\n\n");
+				printf("how would you like to pay\n\n");
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment){
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+							printf("enter your otp here:");
+						scanf("%d",&otp);
+						label2:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto label2;
+							
+						}
+						break;
+							case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						kabel2:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto kabel2;
+							
+						}
+						break;
+					}
+			break;
+				case 3:
+						printf("uff really your choice is so nice\n\n");
+				printf("price of this amazing dish is :Rs 600/-\n\n");
+					printf("how would you like to pay\n\n");
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment){
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+							printf("enter your otp here:");
+						scanf("%d",&otp);
+						label3:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto label3;
+							
+						}
+						break;
+							case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						kabel4:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto kabel4;
+							
+						}
+						break;
+					}
+			break;
+				case 4:
+						printf("uff really your choice is so nice \n\n");
+				printf("price of this amazing dish is :Rs 750/-\n\n");
+					printf("how would you like to pay\n\n");
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment){
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+							printf("enter your otp here:");
+						scanf("%d",&otp);
+						label4:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto label4;
+							
+						}
+						break;
+							case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						kabel5:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto kabel5;
+							
+						}
+						break;
+					}
+			break;
+				 case 5:
+				 		printf("uff really your choice is so nice \n\n");
+				printf("price of this amazing dish is :Rs 800/-\n\n");
+					printf("how would you like to pay\n\n");
+			
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment){
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+							printf("enter your otp here:");
+						scanf("%d",&otp);
+						label5:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto label5;
+							
+						}
+						break;
+							case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						cabel5:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto cabel5;
+							
+						}
+						break;
+					}
+					break;
+				case 6:
+					printf("uff really your choice is so nice \n\n");
+				printf("price of this amazing dish is :Rs 600/-\n\n");
+					printf("how would you like to pay\n\n");
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment){
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+							printf("enter your otp here:");
+						scanf("%d",&otp);
+						label6:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp\n");
+							goto label6;
+							
+						}
+						break;
+							case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						kabel6:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto kabel6;
+							
+						}
+						break;
+					}
+				break;
+				
+				default:
+					printf("Sorry currently we don't have this dish in our menu'");
+					break;
+}
+break;
+case 2:
+	printf("1. Sambhar with lazeez masala-dosa\n\n");
+	printf("2. Sambhar with idli\n\n");
+	printf("3. Nariyal chatni with plain dosa\n \n");
+	printf("Select your order by given number\n\n");
+	scanf("%d",&menu2);
+	switch(menu2){
+		case 1:
+			printf("uff really your choice is so nice \n\n");
+				printf("price of this amazing dish is :Rs 600/-\n\n");
+					printf("how would you like to pay\n\n");
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment){
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+							printf("enter your otp here:");
+						scanf("%d",&otp);
+						label7:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto label7;
+							
+						}
+						break;
+							case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						kabel7:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto kabel7;
+							
+						}
+						break;
+					}
+			break;
+				case 2:
+					printf("uff really your choice is so nice \n\n");
+				printf("price of this amazing dish is :Rs 800/-\n\n");
+					printf("how would you like to pay\n\n");
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment)
+				{
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+							printf("enter your otp here:");
+						scanf("%d",&otp);
+						label8:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto label8;
+							
+						}
+						break;
+							case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						kabel8:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto kabel8;
+							
+						}
+						break;
+					}
+			break;
+				case 3:
+					printf("uff really your choice is so nice \n\n");
+				printf("price of this amazing dish is :Rs 660/-\n\n");
+					printf("how would you like to pay\n\n");
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment){
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+							printf("enter your otp here:");
+						scanf("%d",&otp);
+						label9:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto label9;
+							
+						}
+						break;
+							case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						kabel9:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto kabel9;
+							
+						}
+						break;
+					}
+				break;
+				default:
+					printf("sorry we are unable to serve this dish now");
+					break;
+			
+	}
+	break;
+	case 3:
+		printf(" 1. Pasta\n\n");
+		printf(" 2. Momos\n\n");
+		printf("3. Noodles\n\n");
+		printf("Select your order by given number\n\n");
+		scanf("%d",&menu3);
+		
+		switch (menu3){
+			case 1:
+				printf("uff really your choice is so nice nahh\n\n");
+				printf("price of this amazing dish is :Rs 600/-\n\n");
+					printf("how would you like to pay\n\n");
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment){
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+							printf("enter your otp here:");
+						scanf("%d",&otp);
+						label10:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto label10;
+							
+						}
+						break;
+							case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						kabel10:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto kabel10;
+							
+						}
+						break;
+					}
+			break;
+				case 2:
+					printf("uff really your choice is so nice nahh\n");
+				printf("price of this amazing dish is :Rs 690/-\n\n");
+					printf("how would you like to pay\n\n");
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment){
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+							printf("enter your otp here:");
+						scanf("%d",&otp);
+						label11:
+						if(otp==679){
+							printf("Your payment was succesfull\n");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto label11;
+							
+						}
+						break;
+							case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						kabel11:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto kabel11;
+							
+						}
+						break;
+					}
+			break;
+				case 3:
+				printf("uff really your choice is so nice nahh\n\n");
+				printf("price of this amazing dish is :Rs 640/-\n\n");
+					printf("how would you like to pay\n\n");
+				printf("1. UPI\n\n");
+				printf("2. Debit card \n\n");
+				printf("Select any one");
+				scanf("%d",&payment);
+				switch(payment){
+					case 1:
+						printf("enter your UPI ID");
+						scanf("%s",&upi);
+						printf("your OTP is: 679\n");
+							printf("enter your otp here:  ");
+						scanf("%d",&otp);
+						label12:
+						if(otp==679){
+							printf("Your payment was succesfull\n");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto label12;
+							
+						}
+						break;
+							case 2:
+								printf("enter your ATM number");
+						scanf("%s",&atm);
+						printf("your OTP is: 679\n");
+						printf("enter your otp here:");
+						scanf("%d",&otp);
+						kabel12:
+						if(otp==679){
+							printf("Your payment was succesfull");
+						}
+						else{
+							printf("Please enter correct otp");
+							goto kabel12;
+							
+						}
+						break;
+					}
+			break;
+				default:
+					printf("sorry we are unable to serve  anything");
+				break;
+					
+		}
+		break;
+		default:
+			printf("Sorry ! We are not able to serve you now");
+			break;
+		}
+		
+          	printf("**********************************************************************************************************************************");
+			printf("************************************************ THANK YOU**************************************************************************");
+			printf("************************************************************************************************************************************");
+        //	printf("*********                             ***********PLEASE VISIT AGAIN*************                                                ********");                                       ")
+			
+
+	
+	
+}
